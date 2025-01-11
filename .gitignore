@@ -1,0 +1,8 @@
+/*/.cache/
+/*/cd/
+/*/build/
+/*/*.cue
+/*/*.iso
+/*/*.log
+compile_commands.json
+.vscode/
