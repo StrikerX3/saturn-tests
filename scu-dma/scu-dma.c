@@ -25,16 +25,10 @@ int main(void)
         *(char *)(bbusSrc + i) = i;
     }
 
-    // TODO: menu
-    // TODO: allow selecting channel (0-2)
     // TODO: test different strides
-    //   reads:
-    //     CS2: 0 or 4 bytes
-    //     others: 4 bytes only
-    //   writes:
-    //     B-Bus: 0, 2, 4, 8, 16, 32, 64 or 128 bytes
-    //     CS2: 0 or 4 bytes
-    //     others: 4 bytes only
+    //   reads: 0 or 4 bytes
+    //   writes: 0, 2, 4, 8, 16, 32, 64 or 128 bytes
+    // TODO: unaligned reads and/or writes
 
     scu_dma_handle_t dma_handle_no_inc = {
         //.dnr = CPU_CACHE_THROUGH | (uintptr_t)src,
